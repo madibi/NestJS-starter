@@ -1,0 +1,8 @@
+export enum Role {
+  PROGRAMMER = 'PROGRAMMER',
+  ADMIN = 'ADMIN',
+  SUPER_VISOR = 'SUPER_VISOR',
+  POWER_USER = 'POWER_USER',
+  USER = 'USER',
+  GUEST = 'GUEST',
+  }

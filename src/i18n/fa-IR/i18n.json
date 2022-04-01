@@ -1,0 +1,50 @@
+{
+	"app": {
+		"tellMeHello": {
+			"MESSAGE": "سلام"
+		}
+	},
+	"auth": {
+		"EMAIL_EXIST": "ایمیل قبلا وجود دارد",
+		"MOBILE_NUMBER_EXIST": "شکاره موبایل وجود دارد",
+		"NOT_AUTHENTICATED": "لطفا ابتدا وارد شوید",
+		"NOT_EQUAL_USER_AGENT": "اطلاعات کاربری کاوشگر نابرابر",
+		"NOT_EQUAL_USER_IP": "آی پی نابرابر",
+		"NOT_LOGGED_IN": "نیاز به ورود",
+		"NOT_PROPER_CLAIM": "نیاز به دسترسی مناسب",
+		"NOT_PROPER_PAYLOAD": "نیازمندی های نامناسب",
+		"NOT_PROPER_ROLE": "نساز به نقش مناسب",
+		"NOT_PROPER_ROLE_CLAIM": "نیاز به نقش یا دسترسی مناسب",
+		"NOT_PROPER_USER_AGENT": "اطلاعات کاربری کاوشکر نامناسب",
+		"NOT_PROPER_USER_IP": "آی پی نامناسب",
+		"USERNAME_EXIST": "نام کاربری وجود دارد"
+	},
+	"common": {
+		"imageProcessor": {
+			"SOMETHING_WRONG": "خطایی رخ داده"
+		},
+		"sms": {
+			"SAVING_LOG_FAILED": "saving sms log failed, try again"
+		}
+	},
+	"user": {
+		"firebase": {
+			"CODE_ERROR": "fireBase verify code error",
+			"CODE_INCORRECT": "code is not correct",
+			"VERIFY_CODE_ERROR": "fireBase verify code response error"
+		},
+		"requestCode": {
+			"ATTEMPTED_A_LOT": "you attempted more than { qnty } times, try after { after } minutes",
+			"SMS_SENT": "sms sent successfully",
+			"TRY_AGAIN": "try after { after } minutes"
+		},
+		"verifyCode": {
+			"NO_PROPER_MOBILE_CODE_EXPIRE": "no proper mobile number found, or code expired"
+		}
+	},
+	"validation": {
+		"IsNotEmpty": "{$property} نباید خالی باشد",
+		"MinLength": "{$property} باید بیشتر از {$constraint1} باشد",
+		"NOT_VALID_INPUT_FIELD": "لطفا ورودی ها را چک بفرمایید"
+	}
+}

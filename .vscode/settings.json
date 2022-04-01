@@ -1,0 +1,20 @@
+{
+    "cSpell.words": [
+        "dtos",
+        "Kaveh",
+        "qnty",
+        "smses"
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 200,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "lolcalDB",
+            "database": "exchangeDB",
+            "username": "postgres",
+            "password": "soICanChangeMyGoldCoins!"
+        }
+    ]
+}

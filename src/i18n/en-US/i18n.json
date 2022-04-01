@@ -1,0 +1,50 @@
+{
+	"app": {
+		"tellMeHello": {
+			"MESSAGE": "HELLO"
+		}
+	},
+	"auth": {
+		"EMAIL_EXIST": "email address already exists",
+		"MOBILE_NUMBER_EXIST": "mobile number already exists",
+		"NOT_AUTHENTICATED": "please log in first",
+		"NOT_EQUAL_USER_AGENT": "not equal user agent",
+		"NOT_EQUAL_USER_IP": "not equal user ip",
+		"NOT_LOGGED_IN": "not logged in",
+		"NOT_PROPER_CLAIM": "not proper claim",
+		"NOT_PROPER_PAYLOAD": "not proper payload",
+		"NOT_PROPER_ROLE": "not proper role",
+		"NOT_PROPER_ROLE_CLAIM": "not proper claim",
+		"NOT_PROPER_USER_AGENT": "not proper user agent",
+		"NOT_PROPER_USER_IP": "not proper user ip",
+		"USERNAME_EXIST": "username already exists"
+	},
+	"common": {
+		"imageProcessor": {
+			"SOMETHING_WRONG": "something went wrong"
+		},
+		"sms": {
+			"SAVING_LOG_FAILED": "saving sms log failed, try again"
+		}
+	},
+	"user": {
+		"firebase": {
+			"CODE_ERROR": "fireBase verify code error",
+			"CODE_INCORRECT": "code is not correct",
+			"VERIFY_CODE_ERROR": "fireBase verify code response error"
+		},
+		"requestCode": {
+			"ATTEMPTED_A_LOT": "you attempted more than { qnty } times, try after { after } minutes",
+			"SMS_SENT": "sms sent successfully",
+			"TRY_AGAIN": "try after { after } minutes"
+		},
+		"verifyCode": {
+			"NO_PROPER_MOBILE_CODE_EXPIRE": "no proper mobile number found, or code expired"
+		}
+	},
+	"validation": {
+		"IsNotEmpty": "{$property} should not be empty",
+		"MinLength": "{$property} must not be greater than {$constraint1}",
+		"NOT_VALID_INPUT_FIELD": "please check inputs"
+	}
+}
