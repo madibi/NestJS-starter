@@ -14,9 +14,8 @@ import { SetCacheRQ } from '../models/dtos/set-cache-rq.dto';
 
 // TODO: REMOVE DEMO METHODS OR DISABLE ON PRODUCT MODE
 
-@Controller('app')
 @ApiTags('app')
-@Controller()
+@Controller('app')
 export class AppController {
   constructor(
     private readonly appService: AppService,

@@ -20,7 +20,7 @@ describe('AppService', () => {
   const mockHttpService = {};
 
   beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
+    const testingModule: TestingModule = await Test.createTestingModule({
       providers: [
         AppService,
         LanguageService,
@@ -29,34 +29,44 @@ describe('AppService', () => {
         NotificationGateway,
         LogService,
         CachingService,
-        HttpService,                                                        
+        HttpService,
       ],
     })
-    .overrideProvider(LanguageService).useValue(mockLanguageService)    
-    .overrideProvider(LangService).useValue(mockLangService)    
-    .overrideProvider(AppConfigService).useValue(mockAppConfigService)    
-    .overrideProvider(NotificationGateway).useValue(mockNotificationGateway)    
-    .overrideProvider(LogService).useValue(mockLogService)    
-    .overrideProvider(CachingService).useValue(mockCachingService)    
-    .overrideProvider(HttpService).useValue(mockHttpService)                                   
-    .compile();
+      .overrideProvider(LanguageService)
+      .useValue(mockLanguageService)
+      .overrideProvider(LangService)
+      .useValue(mockLangService)
+      .overrideProvider(AppConfigService)
+      .useValue(mockAppConfigService)
+      .overrideProvider(NotificationGateway)
+      .useValue(mockNotificationGateway)
+      .overrideProvider(LogService)
+      .useValue(mockLogService)
+      .overrideProvider(CachingService)
+      .useValue(mockCachingService)
+      .overrideProvider(HttpService)
+      .useValue(mockHttpService)
+      .compile();
 
-    appService = module.get<AppService>(AppService);
-    appService.tellMeHello = jest.fn().mockImplementation((languageInfo: string) => 
-      Promise.resolve('hello'))
+    appService = testingModule.get<AppService>(AppService);
+    appService.tellMeHello = jest
+      .fn()
+      .mockImplementation((languageInfo: string) => Promise.resolve('hello'));
   });
 
   it('should be defined', () => {
     expect(appService).toBeDefined();
   });
 
-  describe('app service', () => {
-    it('ping should return pong', async () => {
-      expect(appService.ping()).toBe('pong'); 
+  describe('ping method', () => {
+    it('should return pong', async () => {
+      expect(appService.ping()).toBe('pong');
     });
+  });  
 
-    it('tellMeHello should return "hello"', async () => {
-      expect(await appService.tellMeHello('en-US')).toBe('hello'); 
-    });    
-  })
+  describe('tellMeHello', () => {
+    it('should return "hello"', async () => {
+      expect(await appService.tellMeHello('en-US')).toBe('hello');
+    });
+  });
 });

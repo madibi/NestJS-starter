@@ -13,9 +13,8 @@ import { LanguageInfo } from "./../../../decorators/language-info.decorator";
 import { RefreshTokenRQ } from "../models/dtos/refresh-token-rq.dto";
 import { Token } from "../models/dtos/token.dto";
 
-@Controller('auth')
 @ApiTags('auth')
-@ApiBearerAuth()
+@Controller('auth')
 export class AuthController {
 
   constructor(

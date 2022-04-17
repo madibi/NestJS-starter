@@ -3,11 +3,8 @@ import { ApiTags } from '@nestjs/swagger';
 import { EnumInfo } from '../models/dtos/enum-info.dto';
 import { EnumService } from '../services/enum.service';
 
-// TODO: REMOVE DEMO METHODS OR DISABLE ON PRODUCT MODE
-
-@Controller('enum')
 @ApiTags('enum')
-@Controller()
+@Controller('enum')
 export class EnumController {
   constructor(
     private readonly enumService: EnumService,

@@ -12,7 +12,7 @@ describe('AppController', () => {
   };
 
   beforeEach(async () => {
-    const app: TestingModule = await Test.createTestingModule({
+    const testingModule: TestingModule = await Test.createTestingModule({
       controllers: [AppController],
       providers: [
           {
@@ -24,8 +24,10 @@ describe('AppController', () => {
     .overrideProvider(AppService).useValue(mockAppService)
     .compile();
 
-    appController = app.get<AppController>(AppController);
+    appController = testingModule.get<AppController>(AppController);
   });
+
+  it.todo('sample for TDD');
 
   it('should be defined', () => {
     expect(appController).toBeDefined();
